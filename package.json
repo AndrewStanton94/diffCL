@@ -1,0 +1,12 @@
+{
+  "name": "diffCL",
+  "description": "A tool to diff versions of a spreadsheet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AndrewStanton94/diffCL.git",
+  "author": "Andrew Stanton <up683693@myport.ac.uk>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "xlsx": "^0.14.1"
+  }
+}
