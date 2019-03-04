@@ -6,7 +6,7 @@ const sheetname = workbook.SheetNames[0];
 let sheet = workbook.Sheets[sheetname]
 let courses = {};
 
-let cells = sheet2arr(sheet, XLSX, 'A1:W5');
+let cells = sheet2arr(sheet, XLSX, 'A1:Z5');
 let headers = cells.slice(0, 3);
 
 cells.slice(3).forEach((row) => {
@@ -15,8 +15,7 @@ cells.slice(3).forEach((row) => {
 })
 
 // console.log(headers);
-// console.log(headers[0]);
 hierarchicalHeaders = headers[0].map((c, i) => [c, headers[1][i], headers[2][i]])
-// console.log(headers[1]);
-// console.log(headers[2]);
+	.map((headerColumn) => headerColumn.filter((cell) => cell !== undefined).join(' => '))
+console.log(hierarchicalHeaders);
 // console.log(courses);
