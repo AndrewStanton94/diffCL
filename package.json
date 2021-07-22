@@ -7,6 +7,6 @@
   "author": "Andrew Stanton <up683693@myport.ac.uk>",
   "license": "GPL-3.0",
   "dependencies": {
-    "xlsx": "^0.14.1"
+    "xlsx": "^0.17.0"
   }
 }
